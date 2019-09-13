@@ -5,7 +5,7 @@ public class TestaCasa
     {
         Casa c1 = new Casa();
         
-        c1.cor = " Rosa ";
+        c1.setCor(" Rosa ");
         
         Porta p1 = new Porta();
         p1.fecha();
@@ -14,9 +14,9 @@ public class TestaCasa
         Porta p3 = new Porta();
         p3.abre();
         
-        c1.porta1 = p1;
-        c1.porta2 = p2;
-        c1.porta3 = p3;
+        c1.setPorta1(p1);
+        c1.setPorta2(p2);
+        c1.setPorta3(p3);
         
         System.out.println(c1.quantasPortasEstaoAbertas());
         

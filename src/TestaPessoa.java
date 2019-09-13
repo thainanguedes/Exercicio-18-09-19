@@ -2,14 +2,14 @@ public class TestaPessoa{
     
     public static void main(String [] args){
         Pessoa p1= new Pessoa();
-        p1.nome = " Maike Soares ";
-        p1.idade =20;
+        p1.setNome(" Maike Soares ");
+        p1.setIdade(20);
         
         p1.fazAniversario();
         p1.fazAniversario();
         p1.fazAniversario();
         
-        String dados = p1.nome+"\n"+p1.idade;
+        String dados = p1.getNome()+"\n"+p1.getIdade();
         System.out.println(dados);
     }
 }
