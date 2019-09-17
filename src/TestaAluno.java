@@ -6,7 +6,7 @@ public class TestaAluno {
     {
         Aluno a1 = new Aluno();
         
-        a1.setNome("Maike Soares ");
+        a1.setNome("Thainan Guedes ");
         a1.setCpf ("000.000.000-00");
         
         Data d1 = new Data();
