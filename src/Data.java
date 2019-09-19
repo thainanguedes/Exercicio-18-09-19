@@ -4,6 +4,14 @@
     private int mes;
     private int ano;
     
+    public Data(int d,int m,int a){
+        this.setDia(d);
+        this.setMes(m);
+        this.setAno(a);
+    
+    }
+    
+    
     public int getDia(){
         return this.dia;
     }

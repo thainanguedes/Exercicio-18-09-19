@@ -5,6 +5,12 @@ public class Aluno
     private String CPF;
     private Data dataDeNascimento;
     
+    public Aluno(String n, String c, Data d){
+        this.setNome(n);
+        this.setCpf(c);
+        this.setDataDeNascimento(d);
+    }
+    
     public String getNome(){
         return this.nome;
     }
@@ -18,21 +24,16 @@ public class Aluno
     }
     
     public void setNome(String n){
-        this.nome= n;
+        this.nome = n;
     }
     
     public void setCpf(String c){
-        this.CPF= c;
+        this.CPF = c;
     }
     
-    public void setdataDeNascimento(Data d){
-        this.dataDeNascimento= d;
+    public void setDataDeNascimento(Data d){
+        this.dataDeNascimento = d;
     }
     
-    String imprimir ()
-    {
-        String aluno = this.nome + "\n" + this.CPF + "\n" + this.dataDeNascimento.imprimir();
-        return aluno;
-    }
-    
+   
 }

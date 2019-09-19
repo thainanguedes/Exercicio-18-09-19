@@ -4,19 +4,16 @@ public class TestaAluno {
     
     public static void main (String [] args)
     {
-        Aluno a1 = new Aluno();
+        Data d = new Data(16,12,1994);
         
-        a1.setNome("Thainan Guedes ");
-        a1.setCpf ("000.000.000-00");
+        Aluno n = new Aluno("thainan", "999-999-999-99", d);
         
-        Data d1 = new Data();
-        d1.setDia (03);
-        d1.setMes(10);
-        d1.setAno(1998);
-        a1.setdataDeNascimento(d1);
+        String dados = n.getNome()+"\n"+n.getCpf()+"\n"+n.getDataDeNascimento().imprimir();
         
-        String dados = a1.imprimir();     
         System.out.println(dados);
+        
+        
+
     
         
     }
