@@ -6,6 +6,14 @@ public class Porta {
     private int dimensaoY;
     private int dimensaoZ;
     
+    public Porta( String c, int dx, int dy, int dz){
+         this.setCor(c);
+        this.setDimensaox(dx);
+        this.setDimensaoy(dy);
+        this.setDimensaoz(dz);
+    }
+    
+    
     public boolean getAberta(){
         return this.aberta;
     }
